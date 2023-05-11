@@ -1,0 +1,246 @@
+.mycol img {
+    width: 100%;
+    border-radius: 3%;
+}
+.item{
+    position: relative;
+    overflow: hidden;
+    border-radius: 3%;
+
+}
+.imgoverlayer{
+    background-color: rgba(255, 255, 255, 0.59);
+    position: absolute;
+    border-radius: 3%;
+    top: 100%;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    transition: all .5s;
+    padding-left: 5%;
+}
+.item:hover .imgoverlayer {
+
+    bottom: 0%;
+    top: 0%;
+
+}
+/* .body{
+    position: relative;
+} */
+.largeoverlayer{
+    /* position: fixed; */
+    /* top: 0; */
+    /* bottom: 0; */
+    /* height: 100%; */
+    /* left: 0; */
+    /* right: 0; */
+    /* display: block; */
+    display: none;
+    /* z-index: 2000; */
+    width: 100%;
+    height: auto;
+
+}
+.largeoverlayerImg{
+    width: 100%;
+    border-radius: 3%;
+}
+.myNavBar{
+    position: fixed;
+    background-color: burlywood;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    z-index: 900000;
+    display: flex
+}
+.navinner{
+height: 100%;
+width: 80%;
+background-color: black;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.navIconSide{
+height: 100%;
+width: 20%;
+background-color: aliceblue;
+}
+
+/* lw 7sl moshkla f el jQuery bsbb el bootstrap 7oty da w shely navbar-nav */
+.mynavbarnav{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+
+}
+.nav-link{
+    /* text-decoration: none; */
+    padding-top: 20%;
+    color: aliceblue;
+}
+.navbar{
+    /* padding-bottom: 30%; */
+    /* padding-top: 10%; */
+    /* display: none; */
+    height: 300px;
+    /* background-color: blue; */
+}
+.navIconSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ourlogo{
+    width: 100%;
+    padding-top: 10px;
+}
+.OurIcon{
+    font-size: 2.5rem;
+    padding-left: 15px;
+    cursor: pointer;
+}
+.bottomIcons{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.eachIcon{
+    padding-top: 5px;
+}
+.body{
+    position: relative;
+}
+.searchSection{
+    /* position: fixed; */
+    /* top: 0; */
+    /* bottom: 0; */
+    width: 100%;
+    height: 100%;
+    /* left: 0; */
+    /* right: 0; */
+    /* background-color: darkblue; */
+    background-color: black;
+    padding-top: 50px;
+    display: none;
+    /* overflow: auto; */
+}
+/* .itemsPart{
+    display: none;
+} */
+
+.itemtwo{
+    position: relative;
+    overflow: hidden;
+    border-radius: 3%;
+}
+.categoryoverlayer{
+    background-color: rgba(255, 255, 255, 0.59);
+    position: absolute;
+    border-radius: 3%;
+    top: 100%;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    /* display: flex; */
+    align-items: center;
+    transition: all .5s;
+    padding-left: 5%;
+    padding-top: 10%;
+    /* padding-bottom: 10%; */
+}
+
+.itemtwo:hover .categoryoverlayer {
+
+    bottom: 0%;
+    top: 0%;
+
+}
+.categorySection{
+    /* position: fixed; */
+    /* top: 0; */
+    /* bottom: 0; */
+    /* height: 100%; */
+    width: 100%;
+    /* left: 0; */
+    /* right: 0; */
+    z-index: 100000;
+    background-color: black;
+    display: none;
+}
+.areaIcon{
+    font-size: 4rem;
+    cursor: pointer;
+}
+.areaSection{
+    /* position: fixed; */
+    /* top: 0; */
+    /* bottom: 0; */
+    /* height: 100%; */
+    width: 100%;
+    /* left: 0; */
+    /* right: 0; */
+    z-index: 100000;
+    background-color: black;
+    display: none; 
+}
+.ingredientsSection{
+    /* position: fixed; */
+    /* top: 0; */
+    /* bottom: 0; */
+    height: 100%;
+    width: 100%;
+    /* left: 0; */
+    /* right: 0; */
+    z-index: 100001;
+    background-color: black;
+    display: none; 
+    /* overflow: auto; */
+
+}
+
+.ingredientsIcon{
+    font-size: 4rem;
+    cursor: pointer;
+}
+.shortparagraph{
+    height: 70px;
+    overflow: hidden;
+}
+.inputSection{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    right: 0;
+    z-index: 100001;
+    background-color: black;
+    display: none; 
+    overflow: auto;
+}
+.loadingPage{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1000000;
+    background-color: black;
+
+}
+.realNav{
+position: relative;
+overflow: hidden;
+}
+nav{
+    position: absolute;
+    top: 100%;
+    bottom: -100%;
+}
