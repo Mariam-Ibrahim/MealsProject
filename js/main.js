@@ -13,7 +13,7 @@ function displayOne(){
     let temp=""
     myMeals.forEach((el)=>{
         temp+=`
-        <div class="col-md-3 col-sm-12 g-3 mycol" uniqueID=${el.idMeal}>
+        <div class="col-lg-3 col-md-4 col-sm-6 g-3 mycol" uniqueID=${el.idMeal}>
         <div class="item ">
           <img src=${el.strMealThumb} alt="meal-item" class="myImage">
           <div class="imgoverlayer">
@@ -382,7 +382,7 @@ function displayByLetter(){
   let temp=""
   dataByLetters.forEach((el)=>{
       temp+=`
-      <div class="col-md-3 col-sm-12 g-3 mycol" uniqueID=${el.idMeal}>
+      <div class="col-lg-3 col-md-4 col-sm-6 g-3 mycol" uniqueID=${el.idMeal}>
       <div class="item ">
         <img src=${el.strMealThumb} alt="meal-item" class="myImage">
         <div class="imgoverlayer">
@@ -443,7 +443,7 @@ function displayCategories(){
   let temp=''
   myCategories.forEach((el)=>{
     temp+=`
-    <div class="col-md-3 myCatItem"  sendCategory=${el.strCategory}>
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6  myCatItem"  sendCategory=${el.strCategory}>
     <div class="itemtwo ">
 
       <img src=${el.strCategoryThumb} alt="category-item" class="categoryImg w-100 rounded-circle mx-auto">
@@ -491,7 +491,7 @@ function   displayAllCategories(){
   categoryRow.style.display="none"
   let temp=""
   allDishes.forEach((el)=>{
-    temp+=`        <div class="col-md-3 col-sm-12 g-3 mycol" uniqueID=${el.idMeal}>
+    temp+=`        <div class="col-lg-3 col-md-4 col-sm-12 g-3 mycol" uniqueID=${el.idMeal}>
     <div class="item ">
       <img src=${el.strMealThumb} alt="meal-item" class="myImage">
       <div class="imgoverlayer">
@@ -545,7 +545,7 @@ async function AreaName(){
   let temp=""
   ourAreas.forEach((el)=>{
     temp+=`
-    <div class="col-md-3 text-center pb-4 AreaItem" myArea=${el.strArea}>
+    <div class="col-lg-3 col-md-4 col-sm-6 text-center pb-4 AreaItem" myArea=${el.strArea}>
     <i class="fa-solid fa-house-laptop text-white areaIcon"></i>
     <h3 class="text-white">${el.strArea}</h3>
   </div>
@@ -581,7 +581,7 @@ let areaDish=[]
   let temp=""
   areaDish.forEach((el)=>{
     temp+=`
-    <div class="col-md-3 col-sm-12 g-3 mycol" uniqueID=${el.idMeal}>
+    <div class="col-lg-3 col-md-4 col-sm-12 g-3 mycol" uniqueID=${el.idMeal}>
     <div class="item ">
       <img src=${el.strMealThumb} alt="meal-item" class="myImage">
       <div class="imgoverlayer">
@@ -635,7 +635,7 @@ function displayIngredients(){
   let temp=""
   for(let i=0 ; i<=20;i++){
     temp+=`
-    <div class="col-md-3 text-center text-white myIngItems" IngredientName=${ingredientsList[i].strIngredient}>
+    <div class="col-lg-3 col-md-4 col-sm-6 text-center text-white myIngItems" IngredientName=${ingredientsList[i].strIngredient}>
   <i class="fa-solid fa-drumstick-bite ingredientsIcon"></i>
   <h3>${ingredientsList[i].strIngredient}</h3>
   <p class="shortparagraph">${ingredientsList[i].strDescription}</p>
@@ -672,7 +672,7 @@ let allIngredientsRow=document.querySelector(".allIngredientsRow")
 function displayOneIngredient(){
   let temp = ""
   myOneIngredient.forEach((el)=>{
-    temp+=`    <div class="col-md-3 col-sm-12 g-3 mycol" uniqueID=${el.idMeal}>
+    temp+=`    <div class="col-lg-3 col-md-4 col-sm-12 g-3 mycol" uniqueID=${el.idMeal}>
     <div class="item ">
       <img src=${el.strMealThumb} alt="meal-item" class="myImage">
       <div class="imgoverlayer">
